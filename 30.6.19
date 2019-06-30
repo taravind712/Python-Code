@@ -1,0 +1,60 @@
+'''
+a=input()
+l=[]
+k=[]
+for i in a:
+    if i.isdigit():
+        l.append(i)
+print(l)
+for i in l:
+    k.append(int(i))
+print(k)
+for i in k:
+    if(i%2==0):
+        print(i,end=" ")'''
+       
+'''
+a=input()
+for i in a:
+    if i.isupper():
+        print(i,end=" ")'''
+'''       
+a=input()
+for i in a:
+    b=ord(i)
+    if (b>=61 and b<=93):
+        print(i,end=" ")'''
+'''        
+a=input()
+c=d=e=0
+for i in a:
+    if(i=='W'):
+        c+=1
+    elif(i=='L'):
+        d+=1
+    else:
+        e+=1
+if e>=1:
+    
+    print('invalid')
+    
+elif c>=d:
+     print('Win')
+else:
+    print('Lose')
+'''    
+'''
+import re 
+a=input()
+sum=0
+z=re.search("[5-8]+",a)
+z=z.group()
+print(z)
+for i in a:
+    if i!='5' and i!='6' and i!='7' and i!='8':
+        sum=sum+int(i)
+print(sum)
+z=int(z)
+sum=sum+z
+print(z)
+'''
