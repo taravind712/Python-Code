@@ -1,0 +1,43 @@
+n=3
+l=[]
+k=[]
+l1=[]
+k1=[]
+l2=[]
+for  i in range(n):
+    s=input()
+    k=s.split(" ")
+    l.append(k)
+for i in range(n):
+    s1=input()
+    k1=s1.split(" ")
+    l1.append(k1)
+print(l)
+print(l1)
+for i in range(n):
+    for j  in range(n):
+        print(l[i][j],end=" ")
+    print()    
+for i in range(n):
+    for j in range(n):
+        print(l1[i][j],end=" ")
+    print()
+for i in range(n):
+    for j in range(n):
+        l[i][j]=int(l[i][j])
+        l1[i][j]=int(l[i][j])
+for i in range(n):
+    l2.append([])
+    for j in range(n):
+        m=l[i][j]*l1[i][j]
+        l2[i].append(m)
+print(l2)'''
+'''
+import re
+a=input()
+c=len(a)
+print(c)
+if(c==10):
+    b=re.match(r'\b[0-9]+\b',a)
+    b=b.group()
+    print(b)'''
