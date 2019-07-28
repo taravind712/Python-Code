@@ -1,0 +1,20 @@
+a=input()
+b=list(a)
+print(b)
+c=set(b)
+print(list(c))
+for i in c:
+    print(i,"-",b.count(i))
+    
+a=input()
+b=a[4:]
+print(int(b))
+c=a[::-1]
+print(c)
+d=a[::2]
+print(d)
+e=a[::3]
+print(e)
+f=a[::-2]
+print(f)
+print(d+f)
